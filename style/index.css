@@ -1,0 +1,147 @@
+:root {
+  --purple: rgb(77, 63, 201); 
+  --remove: rgb(8, 150, 27); 
+  --lightPink: rgb(255, 219, 225); 
+  --pink: rgb(245, 200, 207); 
+  --darkPink: rgb(163, 111, 159); 
+  --hover: rgb(228, 57, 239); 
+  --modal-content: rgb(255, 255, 255); 
+}
+
+body {
+  background-color: var(--lightPink);
+}
+* {
+  border: none;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.btnSortBy {
+  background-color: var(--darkPink);
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.btnRemoveCar{
+  background-color: var(--remove);
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+.btnAddNewCar {
+  background-color: var(--purple);
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+.car-content{
+  background-color: var(--pink);
+  padding: 15px;
+}
+.modal-message{
+  background: var(--purple);
+  padding: 25px;
+  color: white;
+  z-index: 1;
+  position: fixed;
+  display: none;
+}
+.btnModal-content{
+  display: flex;
+}
+
+.btnModalAddNewCar {
+  background-color: var(--purple);
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 170px;
+  left: 185px;  
+  margin: 10px;
+}
+
+input {
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+}
+select {
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+}
+.modalSelect {
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: var(--pink);  
+}
+
+.button:hover{
+  background: var(--hover);
+  cursor: pointer;
+}
+
+.modal-overlay{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.75);
+}
+.objInput {
+  background-color: var(--pink);
+}
+.modal-content{
+  background-color: var(--modal-content);
+  margin: 0 auto;
+  width: 40%;
+}
+
+.modal-header h2{
+  margin: 0;
+}
+
+.modal-header{
+  background: var(--purple);
+  padding: 15px;
+  color: white;
+}
+
+.modal-body{
+  display: inline-block;
+  margin-right: 100px;
+  margin-top: 80px;
+  padding-bottom: 200px;
+}
+
+.closeBtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: rgb(175, 14, 162);
+  text-decoration: none;
+  cursor:  pointer;
+}
+
+.btnSortBy:hover,.btnRemoveCar:hover,.btnAddNewCar:hover,.btnModalAddNewCar:hover{
+  opacity: 0.85;
+  text-decoration: none;
+  cursor:pointer;
+}
+

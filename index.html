@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <title>Case</title>
+  </head>
+  <body>
+    <div id="root">
+      <form id="myForm">
+        <fieldset>
+          <input type="text" placeholder="Opel 07 EA 123" id="carInput" />
+          OR
+          <select name="cars" id="carCategories">
+            <option value="sedan">SEDAN</option>
+            <option value="hatchback">HATCHBACK</option>
+            <option value="station">STATION</option>
+            <option value="cabrio">CABRIO</option>
+            <option value="suv">SUV</option>
+          </select>
+          <button id="btnSortBy" class="btnSortBy">SortBy</button>
+
+          <button id="btnAddNewCar" class="btnAddNewCar">Add New Car</button>
+
+          <div id="simpleModal" class="modal-overlay">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="closeBtn">x</span>
+                <h2>Add New Car Modal</h2>
+              </div>
+              <div class="modal-body" id="modal-body">
+                <div class="modal-content" id="modal-content"></div>
+              </div>
+
+              <div class="btnModal-content">
+                <button id="btnModalAddCar" class="btnModalAddNewCar">
+                  Add New Car
+                </button>
+                <button id="btnModalClearAll" class="btnModalAddNewCar">
+                  Clear All
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-message" id="modal-message"></div>
+        </fieldset>
+      </form>
+      <div id="cont">
+        <div id="div"></div>
+      </div>
+    </div>
+
+    <script src="./modules/library.js"></script>
+    <script src="./modules/filters.js"></script>
+    <script src="./modules/carRegisterNavbar.js"></script>
+    <script src="./modules/Modal/modalCarRegister.js"></script>
+    <script src="./modules/messageBox.js"></script>
+    <script src="./modules/modal.js"></script>
+    <script src="./modules/utilities.js"></script>
+    <script src="main.js"></script>
+    <script src="./modules/carLiStyleList.js"></script>
+
+  </body>
+</html>
