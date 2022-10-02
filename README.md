@@ -5,8 +5,8 @@ This is a simple car management system written in vanillajs and pure nodejs and 
 
 <h3>Built With</h3>
 
-Vanilla Javascript
-Pure Nodejs
+<li>Vanilla Javascript</li>
+<li>Pure Nodejs</li>
 
 <h3>Getting Started</h3>
 
